@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="hearts" aria-hidden="true"></div>
+
+    <main class="card" aria-live="polite">
+      <div class="sparkles" aria-hidden="true"></div>
+
+      <header class="header" id="headerSection">
+        <div class="badge">Barbie Valentine Hotline</div>
+        <h1>Will you be my Valentine?</h1>
+      </header>
+
+      <section class="date-options is-hidden" aria-label="Date options" id="dateOptions">
+        <h2 class="section-title">Choose a dream date</h2>
+        <div class="date-grid">
+          <button class="date-card" data-date="malibu" type="button">
+            <span class="date-title">Malibu Skates</span>
+            <span class="date-sub">Glitter cones + sunset cruise</span>
+          </button>
+          <button class="date-card" data-date="dreamhouse" type="button">
+            <span class="date-title">Dreamhouse Disco</span>
+            <span class="date-sub">Rooftop dance + pink mocktails</span>
+          </button>
+          <button class="date-card" data-date="arcade" type="button">
+            <span class="date-title">Pastel Arcade</span>
+            <span class="date-sub">Photo booth + prize chaos</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="plot-panel is-hidden" id="plotPanel" aria-live="polite">
+        <div class="plot-card">
+          <h2 id="plotTitle">Plot Spiral</h2>
+          <p id="plotText">Pick a date to start the story.</p>
+          <div class="plot-body">
+            <div class="plot-media">
+              <img id="plotImage" alt="Barbie and Ken date moment" />
+            </div>
+            <div class="plot-right">
+              <div class="adventure">
+                <div class="spiral" aria-hidden="true"></div>
+                <div class="stops" aria-label="Adventure stops" id="plotList"></div>
+              </div>
+              <div class="plot-actions">
+                <button id="nextBtn" class="btn btn-no" type="button">Next plot</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ken" id="kenSection">
+        <div class="ken-face" aria-hidden="true">
+          <div class="ken-eye"></div>
+          <div class="ken-eye"></div>
+          <div class="ken-mouth" id="kenMouth"></div>
+        </div>
+        <p class="ken-caption" id="kenCaption">Ken is cheering for your answer.</p>
+      </section>
+
+      <section class="cta" id="ctaSection">
+        <button id="yesBtn" class="btn btn-yes" type="button">
+          Yes, Barbie style!
+        </button>
+
+        <button id="noBtn" class="btn btn-no" type="button">
+          Noooooo
+        </button>
+      </section>
+
+      <section class="footer" id="footerSection">
+        <div id="status" class="status" role="status"></div>
+      </section>
+    </main>
+
+    <script src="style.js"></script>
+  </body>
+</html>
