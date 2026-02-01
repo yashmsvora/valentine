@@ -170,6 +170,7 @@ yesBtn.addEventListener("mouseenter", () => {
 });
 
 noBtn.addEventListener("mouseenter", () => {
+  if (noBtn.dataset.converted) return;
   noHoverCount += 1;
   kenMouth.classList.remove("surprised", "laugh");
   kenFace.classList.remove("laugh-tears");
